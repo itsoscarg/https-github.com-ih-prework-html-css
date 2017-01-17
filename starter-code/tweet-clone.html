@@ -1,26 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+  .flex-container {
+    display: -webkit-flex;
+    display: flex;
+    background-color: white: ;
+      width: 700px;
+      border: 25px solid rgb(244, 248, 249);
+      padding: 25px;
+      margin: 25px;
+      height: 200px;
+      font-family: Helvetica;
+    }
+  .flex-item {
+    background-color: auto;
+    width: 300px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    flex-direction:column;
+    }
+    .flex-item2 {
+      background-color: auto;
+      width: 300px;
+      border: 0px;
+      padding: 0px;
+      margin: 0px;
+      align-content: space-around;
+      align-items:  stretch;
+      align-self: flex-start;
+}
+    .flex-item3 {
+    background-color: auto;
+    width: 150px;
+    height: 40px;
+    border: 2px solid rgb(85, 172, 238);
+    padding: 20px;
+    margin: 0px;
+    font-family: Helvetica;
+    font-weight: bolder;
+    font-size: 24px;
+    flex-direction:column;
+    align-items: center;
+    align-self: auto;
+    align-content: center;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    }
+
+  </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="tweet-clone.css">
+  <link rel="stylesheet" </href="tweet-clone.css">
   <title>HTML &amp; CSS | Ironhack PreWork |</title>
 </head>
 <body>
-  <div>
+<div class="flex-container">
+  <div class="flex-item">
     <img src="img\profile-picture.jpg">
-    <img src="img\account-logo.jpg"><strong>jack</strong>
+    <p>just setting up my twttr</p>
+    <p><twtrdate>9:50 PM - 21 Mar 2006</twtrdate></p>
+    <img src="img\reply.jpg">
+    <img src="img\retweet.jpg">
+      <bottomtext>92,555</bottomtext>
+    <img src="img\favorite.jpg">
+    <bottomtext>71,111</bottomtext>
+    </div>
+    <div class="flex-item2"
+<p>
+    <img src="img\account-logo.jpg">
+    <jack>jack</jack>
     <img src="img\validated-account.jpg">
+    <p><useracct>@jack</useracct></p>
+</div>
+  <div class="flex-item3"
+<p>
     <img src="img\twitter-logo.jpg">
-<p><useracct>@jack</useracct></p>
-<p>just setting up my twttr</p>
-<p><twtrdate>9:50 PM - 21 Mar 2006</twtrdate></p>
-<img src="img\reply.jpg">
-<img src="img\retweet.jpg">
-  <bottomtext>92,555</bottomtext>
-<img src="img\favorite.jpg">
-<bottomtext>71,111</bottomtext>
+    <follow>Follow</follow>
+</div>
+
 </div>
 </body>
 </html>
